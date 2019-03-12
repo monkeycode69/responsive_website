@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Responsive - Website</title>
+    <meta name="author" content="monkeycode69" />
+    <meta name="description" content="responsive website clone coding" />
+    <meta
+      name="keywords"
+      content="responsive, website, clone coding, monkeycode69"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/lightgallery.css" />
+
+    <!-- pavicon -->
+    <link rel="shortcut icon" href="img/Icon/Icon-fav.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="img/Icon/Icon-fav-apple.png"
+    />
+    <link rel="icon" href="img/Icon/Icon-fav-16x16.png" sizes="16x16" />
+    <link rel="icon" href="img/Icon/Icon-fav-32x32.png" sizes="16x16" />
+    <link
+      rel="icon"
+      href="img/Icon/Icon-fav-android-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      href="img/Icon/Icon-fav-android-512x512.png"
+      sizes="512x512"
+    />
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gaegu:700"
+      rel="stylesheet"
+    />
+
+    <!-- facebook meta tags -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="반응형 사이트 만들기(title)" />
+    <meta
+      property="og:url"
+      content="http://richclub8.dothome.co.kr/responsive/html5/index.html"
+    />
+    <meta
+      property="og:image"
+      content="http://richclub8.dothome.co.kr/assets/ico/icon.png"
+    />
+    <meta property="og:site_name" content="반응형 사이트 만들기(site_name)" />
+    <meta
+      property="og:description"
+      content="반응형 사이트 따라하기(description)"
+    />
+
+    <!-- twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="반응형 사이트 만들기(title)" />
+    <meta
+      name="twitter:description"
+      content="반응형 사이트 만들기(description)."
+    />
+    <meta
+      property="twitter:image"
+      content="http://richclub8.dothome.co.kr/assets/ico/icon.png"
+    />
+
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script type="text/javascript">
+        alert(
+          "현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!"
+        );
+      </script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <header class="header-wrap">
+      <div class="is-center">
+        <div class="is-padding">
+          <div class="header">
+            <ul class="header-menu">
+              <li class="header-menu__list"><a href="#">Blog</a></li>
+              <li class="header-menu__list"><a href="#">Youtube</a></li>
+              <li class="header-menu__list"><a href="#">Github</a></li>
+            </ul>
+            <!-- //header-menu -->
+            <div class="header-text">
+              <h2 class="header-tit">Professional web publisher</h2>
+              <br />
+              <a href="#">tistory.co.kr</a>
+            </div>
+            <!-- //header-text -->
+            <div class="header-icon">
+              <ul class="header-icon-list">
+                <li class="header-icon-list__item">
+                  <a href="#">
+                    <i class="fa fa-html5"></i> <span>HTML5</span></a
+                  >
+                </li>
+                <li class="header-icon-list__item">
+                  <a href="#">
+                    <i class="fa fa-github"></i> <span>GITHUB</span></a
+                  >
+                </li>
+                <li class="header-icon-list__item">
+                  <a href="#" class="facebook">
+                    <i class="fa fa-facebook-square"></i>
+                    <span>FACEBOOK</span></a
+                  >
+                </li>
+                <li class="header-icon-list__item">
+                  <a href="#" class="twitter">
+                    <i class="fa fa-twitter-square"></i> <span>TWITTER</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- //header-text -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //header-wrap -->
+    <nav class="nav-wrap">
+      <div class="is-center">
+        <div class="is-padding">
+          <div class="nav">
+            <h2 class="is-hidden">반응형 사이트 전체 네비게이션</h2>
+            <div class="col-nav">
+              <h3 class="nav-tit">HTML Reference</h3>
+              <ol class="nav-list">
+                <li class="nav-list__item"><a href="#">HTML 태그(Tag)</a></li>
+                <li class="nav-list__item">
+                  <a href="#">블록 요소/인라인 요소</a>
+                </li>
+                <li class="nav-list__item"><a href="#">DTD 선언</a></li>
+                <li class="nav-list__item"><a href="#">언어 속성 설정</a></li>
+                <li class="nav-list__item">
+                  <a href="#">HTML &lt;title&gt;</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#">HTML &lt;meta&gt;</a>
+                </li>
+                <li class="nav-list__item"><a href="#">특수문자</a></li>
+                <li class="nav-list__item"><a href="#">하이퍼 링크</a></li>
+                <li class="nav-list__item">
+                  <a href="#">HTML &lt;style&gt;</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#">HTML &lt;html&gt;</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#">HTML &lt;head&gt;</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#">HTML &lt;div&gt;</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#">HTML &lt;colgroup&gt;</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#">HTML &lt;caption&gt;</a>
+                </li>
+              </ol>
+            </div>
+            <div class="col-nav">
+              <h3 class="nav-tit">CSS Reference</h3>
+              <ol class="nav-list">
+                <li class="nav-list__item"><a href="#">CSS 선택자</a></li>
+                <li class="nav-list__item"><a href="#">CSS 단위</a></li>
+                <li class="nav-list__item"><a href="#">CSS 색상</a></li>
+                <li class="nav-list__item"><a href="#">CSS 선언 방법</a></li>
+                <li class="nav-list__item">
+                  <a href="#">상대주소와 절대주소</a>
+                </li>
+                <li class="nav-list__item"><a href="#">CSS float</a></li>
+                <li class="nav-list__item">
+                  <a href="#">이미지 표현 방법</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#">이미지 스프라이트</a>
+                </li>
+                <li class="nav-list__item"><a href="#">IR 효과</a></li>
+                <li class="nav-list__item"><a href="#">이미지 최적화</a></li>
+                <li class="nav-list__item">
+                  <a href="#">background-color</a>
+                </li>
+                <li class="nav-list__item"><a href="#">border-style</a></li>
+                <li class="nav-list__item"><a href="#">font-size</a></li>
+                <li class="nav-list__item"><a href="#">text-align</a></li>
+              </ol>
+            </div>
+            <div class="col-nav">
+              <h3 class="nav-tit">Webstandard</h3>
+              <ol class="nav-list">
+                <li class="nav-list__item"><a href="#">웹 표준</a></li>
+                <li class="nav-list__item"><a href="#">웹 접근성</a></li>
+                <li class="nav-list__item"><a href="#">W3C</a></li>
+                <li class="nav-list__item">
+                  <a href="#">웹 접근성 연구소</a>
+                </li>
+                <li class="nav-list__item"><a href="#">네이버 널리</a></li>
+                <li class="nav-list__item"><a href="#">다음 다룸</a></li>
+                <li class="nav-list__item"><a href="#">Webstandard</a></li>
+              </ol>
+            </div>
+          </div>
+          <!-- //nav -->
+        </div>
+      </div>
+    </nav>
+    <!-- //nav-wrap -->
+    <article class="s-title">
+      <div class="is-center">
+        <div class="s-title-text">
+          <h2 class="s-title-tit">저는 퍼블리셔 입니다.</h2>
+          <button type="button" aria-label="전체메뉴" title="전체메뉴">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </article>
+    <!-- //s-title -->
+    <main class="main">
+      <section class="contents">
+        <div class="is-center">
+          <h2 class="is-hidden">반응형 사이트 컨텐츠</h2>
+          <section class="cont-left">
+            <h3 class="is-hidden">반응형 좌측에 위치한 컨텐츠</h3>
+            <article class="col-cont col1">
+              <h4 class="cont-tit">Menu</h4>
+              <p class="cont-desc">
+                Box-shadow를 이용한 마우스 오버 효과 메뉴얼입니다.
+              </p>
+              <!-- menu -->
+              <div class="menu">
+                <ul class="menu-list">
+                  <li class="menu-list__item">
+                    <a href="#"
+                      >HTML5 <i class="fa fa-angle-double-right"></i
+                    ></a>
+                  </li>
+                  <li class="menu-list__item">
+                    <a href="#"
+                      >CSS3 <i class="fa fa-angle-double-right"></i
+                    ></a>
+                  </li>
+                  <li class="menu-list__item">
+                    <a href="#"
+                      >JAVASCRIPT <i class="fa fa-angle-double-right"></i
+                    ></a>
+                  </li>
+                  <li class="menu-list__item">
+                    <a href="#"
+                      >WEBSITE <i class="fa fa-angle-double-right"></i
+                    ></a>
+                  </li>
+                  <li class="menu-list__item">
+                    <a href="#"
+                      >RESPONSIVE <i class="fa fa-angle-double-right"></i
+                    ></a>
+                  </li>
+                  <li class="menu-list__item">
+                    <a href="#"
+                      >STANDARD <i class="fa fa-angle-double-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- //menu -->
+            </article>
+            <!-- //col1 -->
+            <article class="col-cont col2">
+              <h4 class="cont-tit">Notice</h4>
+              <p class="cont-desc">
+                게시판 영역의 한줄 효과와 두줄 효과를 나타냅니다.
+              </p>
+              <!-- one line list -->
+              <div class="notice notice1">
+                <h5 class="notice-tit">한 줄 효과</h5>
+                <ul class="notice-list">
+                  <li class="notice-list__item">
+                    <a href="#"
+                      >이 줄은 한 줄 효과 입니다.이 줄은 한 줄 효과 입니다.이
+                      줄은 한 줄 효과 입니다.이 줄은 한 줄 효과 입니다.</a
+                    >
+                  </li>
+                  <li class="notice-list__item">
+                    <a href="#"
+                      >이 줄은 한 줄 효과 입니다.이 줄은 한 줄 효과 입니다.이
+                      줄은 한 줄 효과 입니다.이 줄은 한 줄 효과 입니다.</a
+                    >
+                  </li>
+                  <li class="notice-list__item">
+                    <a href="#"
+                      >이 줄은 한 줄 효과 입니다.이 줄은 한 줄 효과 입니다.이
+                      줄은 한 줄 효과 입니다.이 줄은 한 줄 효과 입니다.</a
+                    >
+                  </li>
+                  <li class="notice-list__item">
+                    <a href="#"
+                      >이 줄은 한 줄 효과 입니다.이 줄은 한 줄 효과 입니다.이
+                      줄은 한 줄 효과 입니다.이 줄은 한 줄 효과 입니다.</a
+                    >
+                  </li>
+                </ul>
+                <a href="#" class="more" aria-label="더보기" title="더보기"
+                  ><i class="fa fa-plus-circle"></i
+                ></a>
+              </div>
+              <!-- //one line list -->
+              <!-- two line list -->
+              <div class="notice notice2">
+                <h5 class="notice-tit">두 줄 효과</h5>
+                <ul class="notice-list">
+                  <li class="notice-list__item">
+                    <a href="#"
+                      >이 줄은 두 줄 효과입니다.이 줄은 두 줄 효과입니다.이 줄은
+                      두 줄 효과입니다.이 줄은 두 줄 효과입니다.이 줄은 두 줄
+                      효과입니다.</a
+                    >
+                  </li>
+                  <li class="notice-list__item">
+                    <a href="#"
+                      >이 줄은 두 줄 효과입니다.이 줄은 두 줄 효과입니다.이 줄은
+                      두 줄 효과입니다.이 줄은 두 줄 효과입니다.이 줄은 두 줄
+                      효과입니다.</a
+                    >
+                  </li>
+                  <li class="notice-list__item">
+                    <a href="#"
+                      >이 줄은 두 줄 효과입니다.이 줄은 두 줄 효과입니다.이 줄은
+                      두 줄 효과입니다.이 줄은 두 줄 효과입니다.이 줄은 두 줄
+                      효과입니다.</a
+                    >
+                  </li>
+                  <li class="notice-list__item">
+                    <a href="#"
+                      >이 줄은 두 줄 효과입니다.이 줄은 두 줄 효과입니다.이 줄은
+                      두 줄 효과입니다.이 줄은 두 줄 효과입니다.이 줄은 두 줄
+                      효과입니다.</a
+                    >
+                  </li>
+                </ul>
+                <a href="#" class="more" aria-label="더보기" title="더보기"
+                  ><i class="fa fa-plus-circle"></i
+                ></a>
+              </div>
+              <!-- //two line list -->
+            </article>
+            <!-- //col2 -->
+            <article class="col-cont col3">
+              <h4 class="cont-tit">Blog</h4>
+              <p class="cont-desc">
+                해상도에 따라 이미지를 다르게 표현하는 방법입니다.
+              </p>
+              <!-- blog1 -->
+              <div class="blog blog1">
+                <h5 class="is-hidden">image1</h5>
+                <figure class="blog-fg">
+                  <img
+                    src="img/contents/blog1_@1.jpg"
+                    alt="normal image"
+                    class="normal-img"
+                  />
+                  <img
+                    src="img/contents/blog1_@2.jpg"
+                    alt="retina image"
+                    class="retina-img"
+                  />
+                  <figcaption class="blog-fcp">
+                    반응형 웹 사이트 입니다.반응형 웹 사이트 입니다.
+                  </figcaption>
+                </figure>
+              </div>
+              <!-- //blog1 -->
+              <!-- blog2 -->
+              <div class="blog blog2">
+                <h5 class="is-hidden">image2</h5>
+                <figure class="blog-fg">
+                  <img
+                    src="img/contents/blog2_@1.jpg"
+                    srcset="
+                      img/contents/blog2_@1.jpg 1x,
+                      img/contents/blog2_@2.jpg 2x,
+                      img/contents/blog3_@3.jpg 3x
+                    "
+                    alt="normal image"
+                  />
+                  <figcaption class="blog-fcp">
+                    반응형 웹 사이트 입니다.
+                  </figcaption>
+                </figure>
+              </div>
+              <!-- //blog2 -->
+            </article>
+            <!-- //col3 -->
+          </section>
+          <!-- //cont-left -->
+          <section class="cont-center">
+            <h3 class="is-hidden">반응형 중앙에 위치한 컨텐츠</h3>
+            <article class="col-cont col4">
+              <h4 class="cont-tit">Slick Slider</h4>
+              <p class="cont-desc">
+                slick.js를 이용한 이미지 슬라이드 효과입니다.
+              </p>
+              <!-- slider -->
+              <div class="carousel">
+                <div class="carousel-list">
+                  <a href="#">
+                    <figure class="carousel-fg">
+                      <img src="img/contents/slider001.jpg" alt="이미지1" />
+                      <figcaption class="carousel-fcp">
+                        <em class="carousel-fg-tit"> Responsive Site</em>
+                        <p class="carousel-fg-desc">
+                          슬라이드 플러그인을 이용한 반응형 이미지 슬라이드
+                          만들기.
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="carousel-list">
+                  <a href="#">
+                    <figure class="carousel-fg">
+                      <img src="img/contents/slider001.jpg" alt="이미지1" />
+                      <figcaption class="carousel-fcp">
+                        <em class="carousel-fg-tit"> Responsive Site</em>
+                        <p class="carousel-fg-desc">
+                          슬라이드 플러그인을 이용한 반응형 이미지 슬라이드
+                          만들기.
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="carousel-list">
+                  <a href="#">
+                    <figure class="carousel-fg">
+                      <img src="img/contents/slider001.jpg" alt="이미지1" />
+                      <figcaption class="carousel-fcp">
+                        <em class="carousel-fg-tit"> Responsive Site</em>
+                        <p class="carousel-fg-desc">
+                          슬라이드 플러그인을 이용한 반응형 이미지 슬라이드
+                          만들기.
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- //col4 -->
+            <article class="col-cont col5">
+              <h4 class="cont-tit">Blend Lightbox</h4>
+              <p class="cont-desc">background-blend-mode와 mix-blend-mode</p>
+              <!-- gallery box -->
+              <div class="gallery">
+                <a href="img/contents/light01_s.jpg"
+                  ><img src="img/contents/light01_s.jpg" alt="갤러리 이미지" />
+                  <em>blur</em>
+                </a>
+                <a href="img/contents/light02_s.jpg"
+                  ><img
+                    src="img/contents/light02_s.jpg"
+                    alt="갤러리 이미지"
+                  /><em>brightness</em>
+                </a>
+                <a href="img/contents/light03_s.jpg"
+                  ><img
+                    src="img/contents/light03_s.jpg"
+                    alt="갤러리 이미지"
+                  /><em>contrast</em>
+                </a>
+                <a href="img/contents/light04_s.jpg"
+                  ><img
+                    src="img/contents/light04_s.jpg"
+                    alt="갤러리 이미지"
+                  /><em>grayscale</em>
+                </a>
+                <a href="img/contents/light05_s.jpg"
+                  ><img
+                    src="img/contents/light05_s.jpg"
+                    alt="갤러리 이미지"
+                  /><em>hur-rotate</em>
+                </a>
+                <a href="img/contents/light06_s.jpg"
+                  ><img
+                    src="img/contents/light06_s.jpg"
+                    alt="갤러리 이미지"
+                  /><em>invert</em>
+                </a>
+                <a href="img/contents/light07_s.jpg"
+                  ><img
+                    src="img/contents/light07_s.jpg"
+                    alt="갤러리 이미지"
+                  /><em>opacity</em>
+                </a>
+                <a href="img/contents/light08_s.jpg"
+                  ><img
+                    src="img/contents/light08_s.jpg"
+                    alt="갤러리 이미지"
+                  /><em>saturate</em>
+                </a>
+                <a href="img/contents/light09_s.jpg"
+                  ><img
+                    src="img/contents/light09_s.jpg"
+                    alt="갤러리 이미지"
+                  /><em>sepia</em>
+                </a>
+                <a href="img/contents/light10_s.jpg"
+                  ><img
+                    src="img/contents/light10_s.jpg"
+                    alt="갤러리 이미지"
+                  /><em>mix</em>
+                </a>
+              </div>
+              <!-- //gallery box -->
+            </article>
+            <!-- //col 5-->
+            <article class="col-cont col6">
+              <h4 class="cont-tit">Video</h4>
+              <p class="cont-desc">Iframe을 사용한 비디오 입력방법입니다.</p>
+              <!-- video -->
+              <div class="video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/ALj5MKjy2BU"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <!-- //video -->
+            </article>
+            <!-- //col 6-->
+          </section>
+          <!-- //cont-center -->
+          <section class="cont-right">
+            <h3 class="is-hidden">반응형 우측에 위치한 컨텐츠</h3>
+            <article class="col-cont col7">
+              <h4 class="cont-tit">Effect1</h4>
+              <p class="cont-desc">
+                CSS transform을 이용한 마우스 오버효과입니다.
+              </p>
+              <!-- side1 -->
+              <div class="side side1">
+                <figure class="front">
+                  <img src="img/contents/side1.jpg" alt="" />
+                </figure>
+                <div class="back">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- //side1 -->
+            </article>
+            <!-- //col7 -->
+            <article class="col-cont col8">
+              <h4 class="cont-tit">Effect2</h4>
+              <p class="cont-desc">
+                CSS transform을 이용한 마우스 오버효과입니다.
+              </p>
+              <!-- side2 -->
+              <div class="side side2">
+                <figure class="front">
+                  <img src="img/contents/side2.jpg" alt="" />
+                  <figcaption>
+                    Hover Effect
+                  </figcaption>
+                </figure>
+                <figure class="back">
+                  <img src="img/contents/side4.jpg" alt="" />
+                  <figcaption>
+                    Hover Effect
+                  </figcaption>
+                </figure>
+              </div>
+              <!-- //side2 -->
+            </article>
+            <!-- //col8 -->
+            <article class="col-cont col9">
+              <h4 class="cont-tit">Effect3</h4>
+              <p class="cont-desc">
+                CSS transform을 이용한 마우스 오버효과입니다.
+              </p>
+              <!-- side3 -->
+              <div class="side side3">
+                <figure class="side-fg">
+                  <img src="img/contents/side3.jpg" alt="" />
+                  <figcaption>HOVER <br>Effect</figcaption>
+                </figure>
+              </div>
+              <!-- //side3 -->
+            </article>
+            <!-- //col9 -->
+          </section>
+          <!-- //cont-right -->
+        </div>
+      </section>
+      <!-- //contents -->
+    </main>
+    <!-- //main -->
+    <footer class="footer-wrap">
+      <div class="is-center">
+        <div class="is-padding">
+          <div class="footer">
+            <ul>
+              <li><a href="#">사이트 도움말</a></li>
+              <li><a href="#">사이트 이용약관</a></li>
+              <li><a href="#">사이트 운영원칙</a></li>
+              <li>
+                <a href="#"><strong>개인정보취급방침</strong></a>
+              </li>
+              <li><a href="#">책임의 한계와 법적고지</a></li>
+              <li><a href="#">게시중단요청서비스</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+            <address>
+              Copyright ©
+              <a href="http://webstoryboy.co.kr"
+                ><strong>webstoryboy</strong></a
+              >
+              All Rights Reserved.
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- //footer -->
+    <!-- //footer-wrap -->
+    <!-- javascript library -->
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
